@@ -9,3 +9,6 @@ python manage.py startapp users
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
+tailwindcss init
+cd app
+tailwindcss -i app/static/css/tw-input.css -o app/static/css/ledgerko-ui.css --watch
