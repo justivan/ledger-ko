@@ -13,4 +13,8 @@ COPY docker/django/entrypoint /entrypoint
 RUN sed -i 's/\r$//g' /entrypoint
 RUN chmod +x /entrypoint
 
+COPY .devcontainer/start /start
+RUN sed -i 's/\r$//g' /start
+RUN chmod +x /start
+
 ENTRYPOINT ["/entrypoint"]
