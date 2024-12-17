@@ -11,4 +11,4 @@ echo "Running Django migrations..."
 python "$WORKDIR/manage.py" migrate
 
 echo "Starting Django development server..."
-exec python "$WORKDIR/manage.py" runserver_plus --reloader-interval 5
+exec python "$WORKDIR/manage.py" runserver_plus --reloader-interval 30

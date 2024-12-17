@@ -17,3 +17,6 @@ python manage.py startapp accounts
 python manage.py startapp definitions
 python manage.py makemigrations
 cd app
+cd app
+python manage.py makemigrations
+python manage.py migrate
